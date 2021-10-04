@@ -1,0 +1,31 @@
+$theme-colors: (
+  "gray": $gray,
+  "primary": $primary,
+  "secondary": $secondary,
+  "success": $success,
+  "info": $info,
+  "warning": $warning,
+  "danger": $danger,
+  "light": $light,
+  "dark": $dark,
+) !default;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1540px,
+) !default;
+
+$sizes: (
+  height: 100px,
+  overflow-y: hidden,
+) !default;
+
+body {
+  @import "../../node_modules/bootstrap/scss/variables";
+}
+
+$enable-shadows: true;

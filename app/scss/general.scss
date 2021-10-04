@@ -1,0 +1,15 @@
+.pb-5 {
+  padding: $spacer !important;
+}
+
+.px-4 {
+  padding-left: ($spacer * 1.5) !important;
+  padding-right: ($spacer * 1.5) !important;
+}
+
+.card-shadow {
+  @mixin box-shadow {
+    border-color: $gray;
+    border-radius: 1rem;
+  }
+}
