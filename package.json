@@ -4,20 +4,20 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "bootstrap": "^5.1.1",
     "gulp-concat": "^2.6.1",
-    "gulp-sass": "^5.0.0",
+    "gulp-sass": "^4.1.0",
     "gulp-svg-sprite": "^1.5.0",
     "gulp-pug": "^5.0.0",
-    "jquery": "^3.6.0",
-    "popper.js": "^1.16.1",
     "surge": "^0.23.0"
   },
   "devDependencies": {
+    "bootstrap": "^5.1.1",
+    "jquery": "^3.6.0",
+    "popper.js": "^1.16.1",
     "gulp": "^4.0.2"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npx gulp"
   },
   "author": "",
   "license": "ISC"
