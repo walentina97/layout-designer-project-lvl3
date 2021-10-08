@@ -5,9 +5,9 @@ const pug = require("gulp-pug");
 const concat = require("gulp-concat");
 const svgSprite = require("gulp-svgSprite");
 
-const browserSync = () => {
+const browsersync = () => {
   browserSync.init({
-    server: { baseDir: "./build/" },
+    server: { baseDir: "./dist/" },
     notify: false,
     online: true,
   });
