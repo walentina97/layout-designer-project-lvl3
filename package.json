@@ -15,7 +15,8 @@
     "browser-sync": "^2.27.5",
     "gulp": "^4.0.2",
     "jquery": "^3.6.0",
-    "popper.js": "^1.16.1"
+    "popper.js": "^1.16.1",
+    "svgSprite": "^1.2.0"
   },
   "scripts": {
     "test": "npx gulp"

@@ -1,9 +1,9 @@
-var gulp = require("gulp");
+const { src, dest, parallel, watch } = require("gulp");
 const browserSync = require("browser-sync").create();
 const sass = require("gulp-sass");
 const pug = require("gulp-pug");
 const concat = require("gulp-concat");
-const svgSprite = require("gulp-svgSprite");
+//const svgSprite = require("gulp-svgSprite");
 
 const browsersync = () => {
   browserSync.init({
@@ -41,7 +41,7 @@ const pug2html = () => {
 };
 
 // Создание svg спрайта из иконок
-/*const svg2sprite = () => {
+const svg2sprite = () => {
   const config = {
     mode: {
       stack: {
@@ -54,7 +54,7 @@ const pug2html = () => {
   return src(["./app/images/icons/*.svg"])
     .pipe(svgSprite(config))
     .pipe(dest("./dist/images/icons/"));
-};*/
+};
 
 const startWatch = () => {
   watch(["app/gulpfile.js"], scripts);
