@@ -1,9 +1,17 @@
 var gulp = require("gulp");
-var browserSync = require("browser-sync").create();
+const browserSync = require("browser-sync").create();
 const sass = require("gulp-sass");
 const pug = require("gulp-pug");
 const concat = require("gulp-concat");
 const svgSprite = require("gulp-svgSprite");
+
+const browserSync = () => {
+  browserSync.init({
+    server: { baseDir: "./build/" },
+    notify: false,
+    online: true,
+  });
+};
 
 // Перенос скриптов из node_modules в директорию dist/js
 const scripts = () => {
@@ -32,14 +40,6 @@ const pug2html = () => {
     .pipe(browserSync.stream());
 };
 
-const browserSync = () => {
-  browserSync.init({
-    server: { baseDir: "./build/" },
-    notify: false,
-    online: true,
-  });
-};
-
 // Создание svg спрайта из иконок
 /*const svg2sprite = () => {
   const config = {
@@ -61,4 +61,5 @@ const startWatch = () => {
   watch(["app/scss/app.scss"], sass2css);
   watch(["app/chat.pug", "app/index.pug"], pug2html);
 };
-exports.default = parallel(startWatch, pug2html, sass2css);
+exports.browsersync = browsersync;
+exports.default = parallel(pug2html, sass2css);
