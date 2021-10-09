@@ -24,8 +24,4 @@ $sizes: (
   overflow-y: hidden,
 ) !default;
 
-body {
-  @import "../../node_modules/bootstrap/scss/variables";
-}
-
 $enable-shadows: true;
