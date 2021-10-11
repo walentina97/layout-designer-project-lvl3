@@ -14,8 +14,14 @@
     "bootstrap": "^5.1.1",
     "browser-sync": "^2.27.5",
     "gulp": "^4.0.2",
+    "htmlhint": "^0.15.2",
     "jquery": "^3.6.0",
     "popper.js": "^1.16.1",
+    "stylelint": "^13.13.1",
+    "stylelint-config-rational-order": "^0.1.2",
+    "stylelint-config-standard": "^22.0.0",
+    "stylelint-order": "^4.1.0",
+    "stylelint-scss": "^3.21.0",
     "svgSprite": "^1.2.0"
   },
   "scripts": {

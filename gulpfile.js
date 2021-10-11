@@ -7,7 +7,7 @@ const concat = require("gulp-concat");
 
 const browsersync = () => {
   browserSync.init({
-    server: { baseDir: "./dist/" },
+    server: { baseDir: "./build/" },
     notify: false,
     online: true,
   });
@@ -16,9 +16,9 @@ const browsersync = () => {
 // Перенос скриптов из node_modules в директорию dist/js
 const scripts = () => {
   return src([
-    "./node_modules/jquery/dist/jquery.min.js",
+    "./node_modules/jquery/build/jquery.min.js",
     // Здесь остальные скрипты
-  ]).pipe(dest("./dist/js/"));
+  ]).pipe(dest("./build/js/"));
 };
 // Компиляция SASS в единый CSS файл
 const sass2css = () => {
@@ -28,7 +28,7 @@ const sass2css = () => {
   ])
     .pipe(sass())
     .pipe(concat("app.css"))
-    .pipe(dest("./dist/styles/"))
+    .pipe(dest("./build/styles/"))
     .pipe(browserSync.stream());
   // Обработка через плагин sass, указание конечного файла и его месторасположение
 };
@@ -36,7 +36,7 @@ const sass2css = () => {
 const pug2html = () => {
   return src(["app/index.pug", "app/chat.pug"])
     .pipe(pug())
-    .pipe(dest("./dist/"))
+    .pipe(dest("./build/"))
     .pipe(browserSync.stream());
 };
 
@@ -53,7 +53,7 @@ const svg2sprite = () => {
 
   return src(["./app/images/icons/*.svg"])
     .pipe(svgSprite(config))
-    .pipe(dest("./dist/images/icons/"));
+    .pipe(dest("./build/images/icons/"));
 };
 
 const startWatch = () => {
