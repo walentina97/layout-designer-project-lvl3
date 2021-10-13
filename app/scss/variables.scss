@@ -10,8 +10,6 @@ $theme-colors: (
   "dark": #343a40,
 ) !default;
 
-$body-bg: theme-color("gray");
-
 $grid-breakpoints: (
   xs: 0,
   sm: 576px,
