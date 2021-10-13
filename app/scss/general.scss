@@ -1,6 +1,10 @@
+body {
+  background-color: #efefef;
+}
+
 .card-shadow {
   @mixin box-shadow {
-    border-color: $gray;
+    border-color: #efefef;
     border-radius: 1rem;
   }
 }

@@ -27,8 +27,8 @@ const sass2css = () => {
     // Путь к главному файлу scss, который будет компилироваться
   ])
     .pipe(sass())
-    .pipe(concat("app.css"))
-    .pipe(dest("./build/styles/"))
+    .pipe(concat("styles"))
+    .pipe(dest("./build/app.css"))
     .pipe(browserSync.stream());
   // Обработка через плагин sass, указание конечного файла и его месторасположение
 };
