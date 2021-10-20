@@ -1,4 +1,5 @@
 $theme-colors: (
+  "white": #fff,
   "gray": #efefef,
   "primary": #4545a5,
   "secondary": #6c757d,
@@ -8,7 +9,7 @@ $theme-colors: (
   "danger": #dc3545,
   "light": #fbfbfb,
   "dark": #343a40,
-) !default;
+);
 
 $grid-breakpoints: (
   xs: 0,
@@ -16,12 +17,7 @@ $grid-breakpoints: (
   md: 768px,
   lg: 992px,
   xl: 1200px,
-  xxl: 1540px,
-) !default;
-
-$sizes: (
-  height: 100px,
-  overflow-y: hidden,
-) !default;
+  xxl: 1600px,
+);
 
 $enable-shadows: true;

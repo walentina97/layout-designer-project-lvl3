@@ -3,7 +3,7 @@ const browserSync = require("browser-sync").create();
 const sass = require("gulp-sass");
 const pug = require("gulp-pug");
 const concat = require("gulp-concat");
-//const svgSprite = require("gulp-svgSprite");
+const svgSprite = require("gulp-svg-sprite");
 
 const browsersync = () => {
   browserSync.init({
@@ -11,6 +11,10 @@ const browsersync = () => {
     notify: false,
     online: true,
   });
+};
+
+const copy = () => {
+  return src(["app/images/*.jpg"]).pipe(dest("./build/images"));
 };
 
 // Перенос скриптов из node_modules в директорию dist/js
@@ -61,4 +65,4 @@ const startWatch = () => {
   watch(["app/chat.pug", "app/index.pug"], pug2html);
 };
 exports.browsersync = browsersync;
-exports.default = parallel(pug2html, sass2css);
+exports.default = parallel(pug2html, sass2css, svg2sprite, copy);
