@@ -11,4 +11,10 @@ html(lang='ru')
        .row
          .col-4
            .header.bg-primary
+           .body
+             each contact, index in contacts
+              p= index
+              ul
+                each user in contact
+                  li #{user.name} #{user.status}
          .col-8
