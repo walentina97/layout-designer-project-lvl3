@@ -1,0 +1,7 @@
+.scrollbar {
+  @include hide-scrollbar;
+}
+
+.card-shadow {
+  @include box-shadow;
+}

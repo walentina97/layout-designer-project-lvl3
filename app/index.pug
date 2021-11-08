@@ -6,15 +6,19 @@ html(lang='ru')
     meta(http-equiv='X-UA-Compatible' content='ie=edge')
     title(Мессенджер «Hexlet Chat»)
     link(rel='stylesheet' href='styles/app.css')
-  body.bg-gray.h-100.overflow-hidden
-     .container-xxl.border.rounded.bg-white
-       .row
-         .col-4
-           .header.bg-primary
-           .body
-             each contact, index in contacts
-              p= index
-              ul
+  body.bg-gray.h-100
+    .container-xxl.border.rounded.bg-white
+      .row
+        .col-4.scrollbar
+          .header.bg-primary
+          .body
+            include contacts.pug
+            each contact, index in contacts
+              p.text-muted.pb-5=index
+              a.pb-3.card-shadow.d-inline-flex.text-decoration-none
                 each user in contact
-                  li #{user.name} #{user.status}
-         .col-8
+                  img(src=user.avatar class='rounded-circle' height='50px' width='50px' alt='avatar')
+                  .text-dark
+                    .px-4 #{user.name}
+                    .px-4.small #{user.status}
+        .col-8.border-left
