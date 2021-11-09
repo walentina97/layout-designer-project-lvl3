@@ -14,9 +14,9 @@ html(lang='ru')
           .body
             include contacts.pug
             each contact, index in contacts
-              p.text-muted.pb-5=index
-              a.pb-3.card-shadow.d-inline-flex.text-decoration-none
-                each user in contact
+              p.text-muted.pb-3=index
+              each user in contact
+                a.pb-5.card-shadow.d-flex.text-decoration-none
                   img(src=user.avatar class='rounded-circle' height='50px' width='50px' alt='avatar')
                   .text-dark
                     .px-4 #{user.name}

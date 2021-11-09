@@ -8001,3 +8001,16 @@ textarea.form-control-lg {
 
 .border-left {
   border: 1px solid #efefef; }
+
+.scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  overflow-y: auto;
+  overflow-x: hidden; }
+
+.scrollbar::-webkit-scrollbar {
+  display: none; }
+
+.card-shadow {
+  border-color: #efefef;
+  border-radius: 1rem; }
