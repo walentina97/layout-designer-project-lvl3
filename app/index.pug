@@ -11,12 +11,23 @@ html(lang='ru')
       .row
         .col-4.scrollbar
           .header.bg-primary
-          .body
+            a
+              img(src='logo.svg' width='15px' height='25px' alt='главная')
+            a
+              img(src='images/icons/people.svg' width='25px' height='25px' alt='контакты')
+            a
+              img(src='images/icons/chat.svg' width='25px' height='25px' alt='сообщения')
+            a
+              img(src='images/icons/person.svg' width='25px' height='25px' alt='Профиль')
+          .body.card-body
+            h1.mt-5.mb-4 Контакты
+            form
+              input(type=text class='form-control' placeholder='Поиск по контактам')
             include contacts.pug
             each contact, index in contacts
-              p.text-muted.pb-3=index
+              p.text-muted.mb-5.mt-5=index
               each user in contact
-                a.pb-5.card-shadow.d-flex.text-decoration-none
+                a.mb-3.card-shadow.d-flex.text-decoration-none
                   img(src=user.avatar class='rounded-circle' height='50px' width='50px' alt='avatar')
                   .text-dark
                     .px-4 #{user.name}
