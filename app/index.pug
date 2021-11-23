@@ -9,16 +9,19 @@ html(lang='ru')
   body.bg-gray.h-100
     .container-xxl.border.rounded.bg-white
       .row
-        .col-4.scrollbar
-          .header.bg-primary
+        .col-4.scrollbar.px-0
+          .header.bg-primary.d-flex.justify-content-around.align-items-center.pt-4.pb-4
             a
-              img(src='logo.svg' width='15px' height='25px' alt='главная')
-            a
-              img(src='images/icons/people.svg' width='25px' height='25px' alt='контакты')
-            a
-              img(src='images/icons/chat.svg' width='25px' height='25px' alt='сообщения')
-            a
-              img(src='images/icons/person.svg' width='25px' height='25px' alt='Профиль')
+              img(src='images/icons/sprite.svg#logo' width='15px' alt='главная')
+            a.d-flex
+              img(class='mr-2' src='images/icons/sprite.svg#people' width='25px' alt='контакты')
+              span.text-light Контакты
+            a.d-flex
+              img(class='mr-2' src='images/icons/sprite.svg#chat' width='25px' alt='сообщения')
+              span.text-light Сообщения
+            a.d-flex
+              img(class='mr-2' src='images/icons/sprite.svg#person' width='25px' alt='Профиль')
+              span.text-light Профиль
           .body.card-body
             h1.mt-5.mb-4 Контакты
             form
