@@ -8,31 +8,32 @@ html(lang='ru')
     link(rel='stylesheet' href='styles/app.css')
   body.bg-gray.h-100
     .container-xxl.border.rounded.bg-white
-      .row
-        .col-4.scrollbar.px-0
-          .header.bg-primary.d-flex.justify-content-around.align-items-center.pt-4.pb-4
-            a
+      .row.h-100
+        .col-sm-4.overflow-hidden.scrollbar.px-0.d-flex.flex-column.h-100
+          .header.order-1.bg-primary.d-flex.justify-content-around.align-items-center.pt-4.pb-4
+            a.d-flex.ms-4.me-auto(href='#')
               img(src='images/icons/sprite.svg#logo' width='15px' alt='главная')
-            a.d-flex
-              img(class='mr-2' src='images/icons/sprite.svg#people' width='25px' alt='контакты')
-              span.text-light Контакты
-            a.d-flex
-              img(class='mr-2' src='images/icons/sprite.svg#chat' width='25px' alt='сообщения')
-              span.text-light Сообщения
-            a.d-flex
-              img(class='mr-2' src='images/icons/sprite.svg#person' width='25px' alt='Профиль')
-              span.text-light Профиль
-          .body.card-body
+            nav.d-flex
+              a.d-flex.ms-3.align-items-center.text-decoration-none(href='#')
+                img(class='me-2' src='images/icons/sprite.svg#people' width='25px' alt='контакты')
+                span.text-light.d-none.d-xl-block Контакты
+              a.d-flex.mx-3.align-items-center.text-decoration-none(href='#')
+                img(class='me-2' src='images/icons/sprite.svg#chat' width='25px' alt='сообщения')
+                span.text-light.d-none.d-xl-block Сообщения
+              a.d-flex.me-4.align-items-center.text-decoration-none(href='#')
+                img(class='me-2' src='images/icons/sprite.svg#person' width='25px' alt='Профиль')
+                span.text-light.d-none.d-xl-block Профиль
+          .body.scrollbar.p-4.order-sm-1
             h1.mt-5.mb-4 Контакты
             form
-              input(type=text class='form-control' placeholder='Поиск по контактам')
+              input(type=text class='form-control border-0 shadow-sm p-4 bg-white rounded' placeholder='Поиск по контактам')
             include contacts.pug
             each contact, index in contacts
               p.text-muted.mb-5.mt-5=index
               each user in contact
-                a.mb-3.card-shadow.d-flex.text-decoration-none
+                a.mb-5.shadow-sm.p-3.bg-white.rounded.d-flex.text-decoration-none
                   img(src=user.avatar class='rounded-circle' height='50px' width='50px' alt='avatar')
                   .text-dark
                     .px-4 #{user.name}
                     .px-4.small #{user.status}
-        .col-8.border-left
+        .col-xxl-8.border-start

@@ -8010,7 +8010,3 @@ textarea.form-control-lg {
 
 .scrollbar::-webkit-scrollbar {
   display: none; }
-
-.card-shadow {
-  border-color: #efefef;
-  border-radius: 1rem; }
