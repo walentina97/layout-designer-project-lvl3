@@ -8010,3 +8010,6 @@ textarea.form-control-lg {
 
 .scrollbar::-webkit-scrollbar {
   display: none; }
+
+.h-0 {
+  height: 0; }

@@ -5,3 +5,7 @@
 .card-shadow {
   @include box-shadow;
 }
+
+.h-0 {
+  height: 0;
+}

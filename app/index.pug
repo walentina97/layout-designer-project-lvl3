@@ -1,15 +1,15 @@
 doctype html
-html(lang='ru')
+html(lang='ru' class='h-100')
   head 
     meta(charset='UTF-8')
     meta(name='viewport' content='width=device-width, initial-scale=1.0')
     meta(http-equiv='X-UA-Compatible' content='ie=edge')
     title(Мессенджер «Hexlet Chat»)
     link(rel='stylesheet' href='styles/app.css')
-  body.bg-gray.h-100
-    .container-xxl.border.rounded.bg-white
+  body.bg-gray.h-100.scrollbar
+    .container-xxl.h-100.scrollbar.border.rounded.bg-white
       .row.h-100
-        .col-sm-4.overflow-hidden.scrollbar.px-0.d-flex.flex-column.h-100
+        .col-sm-4.h-100.overflow-hidden.scrollbar.px-0.d-flex.flex-column
           .header.order-1.bg-primary.d-flex.justify-content-around.align-items-center.pt-4.pb-4
             a.d-flex.ms-4.me-auto(href='#')
               img(src='images/icons/sprite.svg#logo' width='15px' alt='главная')
@@ -26,7 +26,7 @@ html(lang='ru')
           .body.scrollbar.p-4.order-sm-1
             h1.mt-5.mb-4 Контакты
             form
-              input(type=text class='form-control border-0 shadow-sm p-4 bg-white rounded' placeholder='Поиск по контактам')
+              input(type=text class='h-0 form-control border-0 shadow-sm p-4 bg-white rounded' placeholder='Поиск по контактам')
             include contacts.pug
             each contact, index in contacts
               p.text-muted.mb-5.mt-5=index
@@ -36,4 +36,9 @@ html(lang='ru')
                   .text-dark
                     .px-4 #{user.name}
                     .px-4.small #{user.status}
-        .col-xxl-8.border-start
+        .col-xl-8.d-none.d-lg-block.border-start.m-auto
+          .d-flex.justify-content-center.flex-column
+            img(class='rounded-circle align-self-center' src='images/avatar_1.jpg' width='200px' alt='приветственное изображение')
+            .text-center.mt-3
+              p.fs-6.fw-bold.m-0 Привет, Кодовёнок
+              p.text-muted.fw-light.m-0 Выбери чат, чтобы начать общаться
