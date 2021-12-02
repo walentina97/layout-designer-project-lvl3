@@ -8011,5 +8011,11 @@ textarea.form-control-lg {
 .scrollbar::-webkit-scrollbar {
   display: none; }
 
+.body a:hover {
+  background-color: #4545a5; }
+
+.body .text-dark:hover {
+  color: #fff !important; }
+
 .h-0 {
   height: 0; }
