@@ -31,8 +31,8 @@ html(lang='ru' class='h-100')
             each contact, index in contacts
               p.text-muted.mb-5.mt-5=index
               each user in contact
-                a.mb-5.shadow-sm.p-3.rounded.d-flex.text-decoration-none
-                  img(src=user.avatar class='rounded-circle' height='50px' width='50px' alt='avatar')
+                a.contact.mb-5.shadow-sm.p-3.rounded.d-flex.text-decoration-none
+                  img(src=user.avatar class='avatar rounded-circle' height='50px' width='50px' alt='avatar')
                   .text-dark
                     .px-4.fw-bold #{user.name}
                     .px-4.small #{user.status}
