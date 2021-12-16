@@ -7999,8 +7999,8 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important; } }
 
-.border-left {
-  border: 1px solid #efefef; }
+.hide_text {
+  text-overflow: ellipsis; }
 
 .scrollbar {
   -ms-overflow-style: none;

@@ -1,0 +1,13 @@
+div(class='body scrollbar p-4 order-sm-1 tab-pane show active' id='contacts' data-toggle='pill' role='tab' aria-controls='contacts' aria-selected='true')
+  h1.mt-5.mb-4.fw-bold Контакты
+  form
+    input(type=text class='h-0 form-control border-0 shadow-sm p-4 bg-white rounded' placeholder='Поиск по контактам')
+  include contacts.pug
+  each contact, index in contacts
+    p.text-muted.mb-5.mt-5=index
+    each user in contact
+      a.contact.mb-5.shadow-sm.p-3.rounded.d-flex.text-decoration-none
+        img(src=user.avatar class='avatar rounded-circle' height='50px' width='50px' alt='avatar')
+        .text-dark
+          .px-4.fw-bold #{user.name}
+          .px-4.small #{user.status}
