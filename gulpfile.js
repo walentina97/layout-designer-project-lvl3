@@ -17,6 +17,10 @@ const copy = () => {
   return src(["app/images/*.jpg"]).pipe(dest("./build/images"));
 };
 
+const copyjs = () => {
+  return src(["app/bootstrap.bundle.js"]).pipe(dest("./build"));
+};
+
 // Перенос скриптов из node_modules в директорию dist/js
 const scripts = () => {
   return src([
@@ -65,4 +69,4 @@ const startWatch = () => {
   watch(["app/chats.pug", "app/index.pug"], pug2html);
 };
 exports.browsersync = browsersync;
-exports.default = parallel(pug2html, sass2css, svg2sprite, copy);
+exports.default = parallel(pug2html, sass2css, svg2sprite, copy, copyjs);

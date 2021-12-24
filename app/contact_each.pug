@@ -1,4 +1,4 @@
-div(class='body scrollbar p-4 order-sm-1 tab-pane show fade active' id='contacts')
+div(class='body scrollbar p-4 order-sm-1 tab-pane show fade active' id='contacts' role="tabpanel" aria-labelledby="home-tab")
   h1.mt-5.mb-4.fw-bold Контакты
   form
     input(type=text class='h-0 form-control border-0 shadow-sm p-4 bg-white rounded' placeholder='Поиск по контактам')
@@ -8,6 +8,6 @@ div(class='body scrollbar p-4 order-sm-1 tab-pane show fade active' id='contacts
     each user in contact
       a.contact.mb-5.shadow-sm.p-3.rounded.d-flex.text-decoration-none
         img(src=user.avatar class='avatar rounded-circle' height='50px' width='50px' alt='avatar')
-        .text-dark
+        .text-dark.cursor_color
           .px-4.fw-bold #{user.name}
           .px-4.small #{user.status}

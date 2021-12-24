@@ -7999,9 +7999,6 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important; } }
 
-.hide_text {
-  text-overflow: ellipsis; }
-
 .scrollbar {
   -ms-overflow-style: none;
   scrollbar-width: none;
@@ -8014,7 +8011,7 @@ textarea.form-control-lg {
 .body a:hover {
   background-color: #4545a5; }
 
-.body .text-dark:hover {
+.body a:hover .cursor_color {
   color: #fff !important; }
 
 .h-0 {

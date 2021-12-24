@@ -1,22 +1,25 @@
 div(class='body scrollbar p-4 order-sm-1 tab-pane fade show' id='chats')
   h1.mt-5.mb-4.fw-bold Чаты
   form
-    input(type=text class='h-0 form-control border-0 shadow-sm p-4 bg-white rounded' placeholder='Поиск по сообщениям')
-    a.contact.mb-5.shadow-sm.p-3.rounded.d-flex.text-decoration-none
-      img(src='images/avatar_4.jpg' class='avatar rounded-circle' height='50px' width='50px' alt='avatar')
-      .text-dark
-        .px-4.fw-bold Вениамин Редакторович
+    input(type=text class='h-0 form-control border-0 shadow-sm p-4 mb-5 bg-white rounded' placeholder='Поиск по сообщениям')
+  a.contact.mb-5.shadow-sm.p-3.rounded.d-flex.text-decoration-none
+    img(src='images/avatar_4.jpg' class='avatar rounded-circle' height='50px' width='50px' alt='avatar')
+    div(class='overflow-hidden w-100')
+      .text-dark.d-flex.justify-content-between
+        .px-4.fw-bold.text-truncate.cursor_color Вениамин Редакторович
         .px-4.small 11:45
-        .px-4.small.hide_text o_O
-    a.contact.mb-5.shadow-sm.p-3.rounded.d-flex.text-decoration-none
-      img(src='images/avatar_2.jpg' class='avatar rounded-circle' height='50px' width='50px' alt='avatar')
-      .text-dark
-        .px-4.fw-bold Джедай Падаванов
+      .text-dark.px-4.small.text-truncate.cursor_color o_O
+  a.contact.mb-5.shadow-sm.p-3.rounded.d-flex.text-decoration-none
+    img(src='images/avatar_2.jpg' class='avatar rounded-circle' height='50px' width='50px' alt='avatar')
+    div(class='overflow-hidden w-100')
+      .text-dark.d-flex.justify-content-between
+        .px-4.fw-bold.text-truncate.cursor_color Джедай Падаванов
         .px-4.small 10:12
-        .px-4.small.hide_text Привет, скоро третий проект? Уже скоро надо будет выложить
-    a.contact.mb-5.shadow-sm.p-3.rounded.d-flex.text-decoration-none
-      img(src='images/avatar_3.jpg' class='avatar rounded-circle' height='50px' width='50px' alt='avatar')
-      .text-dark
-        .px-4.fw-bold Алексей Примадонин
+      .text-dark.px-4.small.text-truncate.cursor_color Привет, скоро третий проект? Уже скоро надо будет выложить
+  a.contact.mb-5.shadow-sm.p-3.rounded.d-flex.text-decoration-none
+    img(src='images/avatar_3.jpg' class='avatar rounded-circle' height='50px' width='50px' alt='avatar')
+    div(class='overflow-hidden w-100')
+      .text-dark.d-flex.justify-content-between
+        .px-4.fw-bold.text-truncate.cursor_color Алексей Примадонин
         .px-4.small 08:53
-        .px-4.small.hide_text Тесты упали >_<
+      .text-dark.px-4.small.text-truncate.cursor_color Тесты упали >_<
