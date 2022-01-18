@@ -1,7 +1,6 @@
 @import "variables";
 @import "../../node_modules/bootstrap/scss/bootstrap";
-@import "general";
-@import "header";
+@import "profile.scss";
 @import "mixin.scss";
 @import "contacts.scss";
-@import "chats.scss";
+@import "utilities.scss/_utilities.scss";

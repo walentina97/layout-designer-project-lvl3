@@ -6,13 +6,14 @@ html(lang='ru' class='h-100')
     meta(http-equiv='X-UA-Compatible' content='ie=edge')
     title(Мессенджер «Hexlet Chat»)
     link(rel='stylesheet' href='styles/app.css')
-  body.bg-gray.h-100.scrollbar
-    .container-xxl.h-100.scrollbar.border.rounded.bg-white
+  body.bg-gray.h-100.scrollbar.m-4.radius
+    .container-xxl.h-100.scrollbar.border.radiusinfix.bg-white
       .row.h-100
         .col-sm-4.h-100.overflow-hidden.scrollbar.px-0.d-flex.flex-column.tab-content
           include header.pug
           include contact_each.pug
           include chats.pug
+          include profile.pug
         .col-xl-8.d-none.d-lg-block.border-start.m-auto
           include right_column.pug
     script(src='bootstrap.bundle.js')

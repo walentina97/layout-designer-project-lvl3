@@ -1,10 +1,10 @@
 div(class='body scrollbar p-4 order-sm-1 tab-pane show fade active' id='contacts' role="tabpanel" aria-labelledby="home-tab")
   h1.mt-5.mb-4.fw-bold Контакты
-  form
-    input(type=text class='h-0 form-control border-0 shadow-sm p-4 bg-white rounded' placeholder='Поиск по контактам')
+  form.mb-5
+    input(type=text class='h-0 form-control border-bottom border-0 p-4 bg-white shadow-none' placeholder='Поиск по контактам')
   include contacts.pug
   each contact, index in contacts
-    p.text-muted.mb-5.mt-5=index
+    p.text-muted.mb-5=index
     each user in contact
       a.contact.mb-5.shadow-sm.p-3.rounded.d-flex.text-decoration-none
         img(src=user.avatar class='avatar rounded-circle' height='50px' width='50px' alt='avatar')
