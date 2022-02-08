@@ -41,7 +41,7 @@ const sass2css = () => {
 };
 // Компиляция Pug. Принцип работы такой же, как и у компиляции SASS
 const pug2html = () => {
-  return src(["app/index.pug", "app/chats.pug"])
+  return src(["app/index.pug", "app/chat.pug"])
     .pipe(pug())
     .pipe(dest("./build/"))
     .pipe(browserSync.stream());
@@ -66,7 +66,7 @@ const svg2sprite = () => {
 const startWatch = () => {
   watch(["app/gulpfile.js"], scripts);
   watch(["app/scss/app.scss"], sass2css);
-  watch(["app/chats.pug", "app/index.pug"], pug2html);
+  watch(["app/chat.pug", "app/index.pug"], pug2html);
 };
 exports.browsersync = browsersync;
 exports.default = parallel(pug2html, sass2css, svg2sprite, copy, copyjs);
