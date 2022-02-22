@@ -8143,3 +8143,12 @@ textarea.form-control-lg {
     border-top: 1px solid #efefef !important; }
   .borderinfix {
     border: 1px solid #efefef !important; } }
+
+.message-get-1 {
+  width: 62%; }
+
+.message-sent-1 {
+  width: 60%; }
+
+.message-get-2 {
+  width: 28%; }
