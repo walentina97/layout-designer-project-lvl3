@@ -7,7 +7,7 @@ div(class='body scrollbar p-4 order-sm-1 tab-pane show fade active' id='contacts
     p.text-muted.mb-5=index
     each user in contact
       a.contact.mb-5.shadow-sm.p-3.rounded.d-flex.text-decoration-none
-        img(src=user.avatar class='avatar rounded-circle' height='50px' width='50px' alt='avatar')
+        img(src=user.avatar class='avatar rounded-circle' height='50' width='50' alt='avatar')
         .text-dark.cursor_color
           .px-4.fw-bold #{user.name}
           .px-4.small #{user.status}

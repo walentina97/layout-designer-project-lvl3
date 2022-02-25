@@ -1,16 +1,16 @@
 .header.order-1.bg-primary.d-flex.justify-content-around.align-items-center.pt-3.pb-3
   a.d-flex.ms-4.me-auto(href='#')
-    img(src='images/icons/sprite.svg#logo' width='15px' alt='главная')
+    img(src='images/icons/sprite.svg#logo' width='15' alt='главная')
   nav.d-flex(class= "nav" id="myTab" role="tablist")
     if current == 'chat'
-        a.d-md-none.d-flex.ms-3.align-items-center.text-decoration-none(id="home-tab" data-bs-toggle="tab" data-bs-target="#chat" type="button" role="tab" aria-controls="home" aria-selected="true")
-          img(class='me-2' src='images/icons/sprite.svg#chat-left-text' width='25px' height='40px' alt='чаты')
-    a.d-flex.ms-3.align-items-center.text-decoration-none(id="home-tab" data-bs-toggle="tab" data-bs-target="#contacts" type="button" role="tab" aria-controls="home" aria-selected="true")
-      img(class='me-2' src='images/icons/sprite.svg#people' width='25px' height='40px' alt='контакты')
+        a.d-md-none.d-flex.ms-3.align-items-center.text-decoration-none(data-bs-toggle="tab" data-bs-target="#chat" role="tab" aria-controls="home" aria-selected="true")
+          img(class='me-2' src='images/icons/sprite.svg#chat-left-text' width='25' height='40' alt='чаты')
+    a.d-flex.ms-3.align-items-center.text-decoration-none(data-bs-toggle="tab" data-bs-target="#contacts" role="tab" aria-controls="home" aria-selected="true")
+      img(class='me-2' src='images/icons/sprite.svg#people' width='25' height='40' alt='контакты')
       span.text-light.d-none.d-xl-block Контакты
-    a.d-flex.mx-3.align-items-center.text-decoration-none(id="home-tab" data-bs-toggle="tab" data-bs-target="#message" type="button" role="tab" aria-controls="home" aria-selected="true")
-      img(src='images/icons/sprite.svg#chat' width='25px' height='40px' alt='сообщения')
+    a.d-flex.mx-3.align-items-center.text-decoration-none(data-bs-toggle="tab" data-bs-target="#message" role="tab" aria-controls="home" aria-selected="true")
+      img(src='images/icons/sprite.svg#chat' width='25' height='40' alt='сообщения')
       span.text-light.d-none.d-xl-block Сообщения
-    a.d-flex.mx-3.align-items-center.text-decoration-none(id="home-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="home" aria-selected="true")
-      img(class='me-2' src='images/icons/sprite.svg#person' width='25px' height='40px' alt='Профиль')
+    a.d-flex.mx-3.align-items-center.text-decoration-none(data-bs-toggle="tab" data-bs-target="#profile" role="tab" aria-controls="home" aria-selected="true")
+      img(class='me-2' src='images/icons/sprite.svg#person' width='25' height='40' alt='Профиль')
       span.text-light.d-none.d-xl-block Профиль
