@@ -1,4 +1,5 @@
-div(class='body scrollbar p-4 order-sm-1 tab-pane fade show' id='chat')
+ mixin chates(id='chat')
+div(class='body scrollbar p-4 order-sm-1 tab-pane fade show')
   div.bg-white.mb-5.p-3.rounded.border-bottom.border-0.d-flex.text-decoration-none.sticky-top
     img(src='images/avatar_4.jpg' class='avatar rounded-circle' height='50' width='50' alt='avatar')
     .text-dark
@@ -39,6 +40,6 @@ div(class='body scrollbar p-4 order-sm-1 tab-pane fade show' id='chat')
         .small.text-muted.pt-2 только что
   form.m-5.p-xl-2.p-sm-0.d-flex.sticky-bottom
     input(type='text' class='h-0 form-control border-top border-0 p-4 bg-white shadow-none' placeholder='напишите сообщение...')
-    button(type='submit' class='btn btn-primary rounded-circle' width='50' height='50')
+    button(type='submit' class='btn btn-primary rounded-circle btn-width')
       img(src='images/icons/sprite.svg#cursor' width='24' alt='кнопка отправки')
 script(src='bootstrap.bundle.js')

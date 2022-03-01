@@ -15,6 +15,6 @@ html(lang='ru' class='h-100')
           include contact_each.pug
           include messages.pug
           include profile.pug
-          include current.pug
+          +mixin chates('chat')
         .col-xl-8.d-none.d-lg-block.border-start.m-auto.overflow-hidden.scrollbar
-          include current.pug
+          +mixin chates
