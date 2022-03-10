@@ -3,14 +3,14 @@
     img(src='images/icons/sprite.svg#logo' width='15' alt='главная')
   nav.d-flex(class= "nav" id="myTab" role="tablist")
     if current == 'chat'
-        a.d-md-none.d-flex.ms-3.align-items-center.text-decoration-none(data-bs-toggle="tab" data-bs-target="#chat" role="tab" aria-controls="home" aria-selected="true")
+        a.d-md-none.d-flex.ms-3.align-items-center.text-decoration-none(id="chat-tab" data-bs-toggle="tab" href="#chat" role="tab" aria-controls="chat" aria-selected="true")
           img(class='me-2' src='images/icons/sprite.svg#chat-left-text' width='25' height='40' alt='чаты')
-    a.d-flex.ms-3.align-items-center.text-decoration-none(data-bs-toggle="tab" data-bs-target="#contacts" role="tab" aria-controls="home" aria-selected="true")
+    a.d-flex.ms-3.align-items-center.text-decoration-none(id="contacts-tab" data-bs-toggle="tab" href="#contacts" role="tab" aria-controls="contacts" aria-selected="true")
       img(class='me-2' src='images/icons/sprite.svg#people' width='25' height='40' alt='контакты')
       span.text-light.d-none.d-xl-block Контакты
-    a.d-flex.mx-3.align-items-center.text-decoration-none(data-bs-toggle="tab" data-bs-target="#message" role="tab" aria-controls="home" aria-selected="true")
+    a.d-flex.mx-3.align-items-center.text-decoration-none(id="message-tab" data-bs-toggle="tab" href="#message" role="tab" aria-controls="message" aria-selected="true")
       img(src='images/icons/sprite.svg#chat' width='25' height='40' alt='сообщения')
       span.text-light.d-none.d-xl-block Сообщения
-    a.d-flex.mx-3.align-items-center.text-decoration-none(data-bs-toggle="tab" data-bs-target="#profile" role="tab" aria-controls="home" aria-selected="true")
+    a.d-flex.mx-3.align-items-center.text-decoration-none(id="profile-tab" data-bs-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="true")
       img(class='me-2' src='images/icons/sprite.svg#person' width='25' height='40' alt='Профиль')
       span.text-light.d-none.d-xl-block Профиль

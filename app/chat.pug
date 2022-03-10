@@ -7,7 +7,7 @@ html(lang='ru' class='h-100')
     title Мессенджер hexlet chat
     link(rel='stylesheet' href='styles/app.css')
     - const current = 'chat';
-  body.bg-gray.h-100.scrollbar.m-md-4.radius
+  body.bg-gray.h-100.scrollbar.p-md-4.radius
     .container-xxl.h-100.scrollbar.border.radiusinfix.bg-white
       .row.h-100
         .col-sm-4.h-100.overflow-hidden.scrollbar.px-0.d-flex.flex-column.tab-content
@@ -15,6 +15,7 @@ html(lang='ru' class='h-100')
           include contact_each.pug
           include messages.pug
           include profile.pug
-          +mixin chates('chat')
-        .col-xl-8.d-none.d-lg-block.border-start.m-auto.overflow-hidden.scrollbar
-          +mixin chates
+          include current.pug
+          +chates('chat')
+        .col-xl-8.h-100.overflow-hidden.scrollbar.p-0.d-none.d-lg-block.border-start.m-auto
+          +chates

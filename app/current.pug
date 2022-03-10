@@ -1,45 +1,45 @@
- mixin chates(id='chat')
-div(class='body scrollbar p-4 order-sm-1 tab-pane fade show')
-  div.bg-white.mb-5.p-3.rounded.border-bottom.border-0.d-flex.text-decoration-none.sticky-top
-    img(src='images/avatar_4.jpg' class='avatar rounded-circle' height='50' width='50' alt='avatar')
-    .text-dark
-      .px-4.fw-bold Вениамин Редакторович
-      .px-4.small онлайн
-  div.mx-5.m-3.d-flex.align-items-end
-    img(src='images/avatar_4.jpg' class='avatar rounded-circle me-3' height='50' width='50' alt='avatar')
-    div.bg-light.radiusinfix.message-get-1
-      .text-dark.p-4
-        .fw-bold Вениамин Редакторович
-        .text-muted Да, я уже вышел и минут через 20-30 буду у тебя. Поеду на трамвае и потом в магазин. Тебе что-то захватить?
-        .small.text-muted.pt-2 8 минут назад
-  div.mx-5.m-3.d-flex.align-items-end.justify-content-end
-    img(src='images/avatar_1.jpg' class='avatar rounded-circle me-3' height='50' width='50' alt='avatar')
-    div.bg-primary.radiusinfix.message-sent-1
-      .text-dark.p-4
-        .text-white.border-bottom.pb-2 Захвати мне колы и пару печенек. Как-то очень сладкого хочется, а в магазин идти лень
-        .small.text-white.pt-2 5 минут назад
-  div.mx-5.m-3.d-flex.align-items-end
-    img(src='images/avatar_4.jpg' class='avatar rounded-circle me-3' height='50' width='50' alt='avatar')
-    div.bg-light.radiusinfix.message-get-2
-      .text-dark.p-4
-        .fw-bold Вениамин Редакторович
-        .text-muted Лады
-        .small.text-muted.pt-2 5 минут назад
-  div.mx-5.m-3.d-flex.align-items-end.justify-content-end
-    img(src='images/avatar_1.jpg' class='avatar rounded-circle me-3' height='50' width='50' alt='avatar')
-    div.bg-primary.radiusinfix.message-get-1
-      .text-dark.p-4
-        .text-white.border-bottom.pb-2 А, слушай, купи мне ещё Macbook Pro. А то хочется работать в Хекслете, а там это условие
-        .small.text-white.pt-2 3 минут назад
-  div.mx-5.m-3.d-flex.align-items-end
-    img(src='images/avatar_4.jpg' class='avatar rounded-circle me-3' height='50' width='50' alt='avatar')
-    div.bg-light.radiusinfix.message-get-2
-      .text-dark.p-4
-        .fw-bold Вениамин Редакторович
-        .text-muted о_О
-        .small.text-muted.pt-2 только что
-  form.m-5.p-xl-2.p-sm-0.d-flex.sticky-bottom
-    input(type='text' class='h-0 form-control border-top border-0 p-4 bg-white shadow-none' placeholder='напишите сообщение...')
-    button(type='submit' class='btn btn-primary rounded-circle btn-width')
-      img(src='images/icons/sprite.svg#cursor' width='24' alt='кнопка отправки')
+mixin chates(id)
+  div(class='body h-100 scrollbar p-0 order-sm-1 tab-pane fade show' id=id)
+    div.bg-white.mb-5.p-3.rounded.border-bottom.border-0.d-flex.text-decoration-none.sticky-top
+      img(src='images/avatar_4.jpg' class='avatar rounded-circle' height='50' width='50' alt='avatar')
+      .text-dark
+        .px-4.fw-bold Вениамин Редакторович
+        .px-4.small онлайн
+    div.mx-5.m-3.d-flex.align-items-md-end.width-phone
+      img(src='images/avatar_4.jpg' class='d-none d-md-block avatar rounded-circle me-3' height='50' width='50' alt='avatar')
+      div.bg-light.radiusinfix.w-75
+        .text-dark.p-4
+          .fw-bold Вениамин Редакторович
+          .text-muted Да, я уже вышел и минут через 20-30 буду у тебя. Поеду на трамвае и потом в магазин. Тебе что-то захватить?
+          .small.text-muted.pt-2 8 минут назад
+    div.mx-5.m-3.d-flex.align-items-md-end.justify-content-md-end.width-phone
+      img(src='images/avatar_1.jpg' class='d-none d-md-block avatar rounded-circle me-3' height='50' width='50' alt='avatar')
+      div.bg-primary.radiusinfix.w-75
+        .text-dark.p-4
+          .text-white.border-bottom.pb-2 Захвати мне колы и пару печенек. Как-то очень сладкого хочется, а в магазин идти лень
+          .small.text-white.pt-2 5 минут назад
+    div.mx-5.m-3.d-flex.align-items-md-end.width-phone
+      img(src='images/avatar_4.jpg' class='d-none d-md-block avatar rounded-circle me-3' height='50' width='50' alt='avatar')
+      div.bg-light.radiusinfix
+        .text-dark.p-4
+          .fw-bold Вениамин Редакторович
+          .text-muted Лады
+          .small.text-muted.pt-2 5 минут назад
+    div.mx-5.m-3.d-flex.align-items-md-end.justify-content-md-end.width-phone
+      img(src='images/avatar_1.jpg' class='d-none d-md-block avatar rounded-circle me-3' height='50' width='50' alt='avatar')
+      div.bg-primary.radiusinfix.w-75
+        .text-dark.p-4
+          .text-white.border-bottom.pb-2 А, слушай, купи мне ещё Macbook Pro. А то хочется работать в Хекслете, а там это условие
+          .small.text-white.pt-2 3 минут назад
+    div.mx-5.m-3.d-flex.align-items-md-end.width-phone
+      img(src='images/avatar_4.jpg' class='d-none d-md-block avatar rounded-circle me-3' height='50' width='50' alt='avatar')
+      div.bg-light.radiusinfix
+        .text-dark.p-4
+          .fw-bold Вениамин Редакторович
+          .text-muted о_О
+          .small.text-muted.pt-2 только что
+    form.m-md-5.mb-0.mt-0.p-xl-2.p-sm-0.d-flex.sticky-bottom.border-top.border-0
+      input(type='text' class='h-0 form-control border-0 p-4 bg-white shadow-none' placeholder='напишите сообщение...')
+      button(type='submit' class='btn btn-primary rounded-circle btn-width')
+        img(src='images/icons/sprite.svg#cursor' width='24' alt='кнопка отправки')
 script(src='bootstrap.bundle.js')
