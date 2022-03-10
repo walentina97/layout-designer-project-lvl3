@@ -11,12 +11,12 @@
       border-bottom-left-radius: 1rem;
     }
 
-    .radius#{infix}-right {
+    .radius#{$infix}-right {
       border-top-right-radius: 1rem;
       border-bottom-right-radius: 1rem;
     }
 
-    .radius#{infix} {
+    .radius#{$infix} {
       border-radius: 1rem;
     }
   }

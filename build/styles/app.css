@@ -8028,11 +8028,11 @@ textarea.form-control-lg {
   border-top-left-radius: 1rem;
   border-bottom-left-radius: 1rem; }
 
-.radiusinfix-right {
+.radius-right {
   border-top-right-radius: 1rem;
   border-bottom-right-radius: 1rem; }
 
-.radiusinfix {
+.radius {
   border-radius: 1rem; }
 
 @media (min-width: 576px) {
@@ -8041,10 +8041,10 @@ textarea.form-control-lg {
   .radius-sm-left {
     border-top-left-radius: 1rem;
     border-bottom-left-radius: 1rem; }
-  .radiusinfix-right {
+  .radius-sm-right {
     border-top-right-radius: 1rem;
     border-bottom-right-radius: 1rem; }
-  .radiusinfix {
+  .radius-sm {
     border-radius: 1rem; } }
 
 @media (min-width: 768px) {
@@ -8053,10 +8053,10 @@ textarea.form-control-lg {
   .radius-md-left {
     border-top-left-radius: 1rem;
     border-bottom-left-radius: 1rem; }
-  .radiusinfix-right {
+  .radius-md-right {
     border-top-right-radius: 1rem;
     border-bottom-right-radius: 1rem; }
-  .radiusinfix {
+  .radius-md {
     border-radius: 1rem; } }
 
 @media (min-width: 992px) {
@@ -8065,10 +8065,10 @@ textarea.form-control-lg {
   .radius-lg-left {
     border-top-left-radius: 1rem;
     border-bottom-left-radius: 1rem; }
-  .radiusinfix-right {
+  .radius-lg-right {
     border-top-right-radius: 1rem;
     border-bottom-right-radius: 1rem; }
-  .radiusinfix {
+  .radius-lg {
     border-radius: 1rem; } }
 
 @media (min-width: 1200px) {
@@ -8077,10 +8077,10 @@ textarea.form-control-lg {
   .radius-xl-left {
     border-top-left-radius: 1rem;
     border-bottom-left-radius: 1rem; }
-  .radiusinfix-right {
+  .radius-xl-right {
     border-top-right-radius: 1rem;
     border-bottom-right-radius: 1rem; }
-  .radiusinfix {
+  .radius-xl {
     border-radius: 1rem; } }
 
 @media (min-width: 1600px) {
@@ -8089,10 +8089,10 @@ textarea.form-control-lg {
   .radius-xxl-left {
     border-top-left-radius: 1rem;
     border-bottom-left-radius: 1rem; }
-  .radiusinfix-right {
+  .radius-xxl-right {
     border-top-right-radius: 1rem;
     border-bottom-right-radius: 1rem; }
-  .radiusinfix {
+  .radius-xxl {
     border-radius: 1rem; } }
 
 .border-bottom {
@@ -8101,7 +8101,7 @@ textarea.form-control-lg {
 .border-top {
   border-top: 1px solid #efefef !important; }
 
-.borderinfix {
+.border {
   border: 1px solid #efefef !important; }
 
 @media (min-width: 576px) {
@@ -8109,7 +8109,7 @@ textarea.form-control-lg {
     border-bottom: 1px solid #efefef !important; }
   .border-sm-top {
     border-top: 1px solid #efefef !important; }
-  .borderinfix {
+  .border-sm {
     border: 1px solid #efefef !important; } }
 
 @media (min-width: 768px) {
@@ -8117,7 +8117,7 @@ textarea.form-control-lg {
     border-bottom: 1px solid #efefef !important; }
   .border-md-top {
     border-top: 1px solid #efefef !important; }
-  .borderinfix {
+  .border-md {
     border: 1px solid #efefef !important; } }
 
 @media (min-width: 992px) {
@@ -8125,7 +8125,7 @@ textarea.form-control-lg {
     border-bottom: 1px solid #efefef !important; }
   .border-lg-top {
     border-top: 1px solid #efefef !important; }
-  .borderinfix {
+  .border-lg {
     border: 1px solid #efefef !important; } }
 
 @media (min-width: 1200px) {
@@ -8133,7 +8133,7 @@ textarea.form-control-lg {
     border-bottom: 1px solid #efefef !important; }
   .border-xl-top {
     border-top: 1px solid #efefef !important; }
-  .borderinfix {
+  .border-xl {
     border: 1px solid #efefef !important; } }
 
 @media (min-width: 1600px) {
@@ -8141,7 +8141,7 @@ textarea.form-control-lg {
     border-bottom: 1px solid #efefef !important; }
   .border-xxl-top {
     border-top: 1px solid #efefef !important; }
-  .borderinfix {
+  .border-xxl {
     border: 1px solid #efefef !important; } }
 
 .btn-width {
@@ -8150,4 +8150,7 @@ textarea.form-control-lg {
 
 @media (max-width: 417px) {
   .width-phone {
-    width: 100%; } }
+    width: 100%; }
+  .button-width {
+    width: 42px;
+    height: 42px; } }
