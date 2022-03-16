@@ -8021,6 +8021,10 @@ textarea.form-control-lg {
 .h-0 {
   height: 0; }
 
+.contact {
+  padding-top: 21px;
+  padding-bottom: 20px; }
+
 .radius-left-top {
   border-top-left-radius: 1rem; }
 

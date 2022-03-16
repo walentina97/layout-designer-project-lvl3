@@ -1,13 +1,13 @@
 div(class='body scrollbar p-4 order-sm-1 tab-pane show fade active' id='contacts' role="tabpanel" aria-labelledby="contacts")
-  h1.mt-5.mb-4.fw-bold Контакты
+  h2.mt-4.mb-4.fw-bold Контакты
   form.mb-5
     input(type='text' class='h-0 form-control border-bottom border-0 p-4 bg-white shadow-none' placeholder='Поиск по контактам')
   include contacts.pug
   each contact, index in contacts
-    p.text-muted.mb-5=index
+    p.text-muted=index
     each user in contact
-      a.contact.mb-5.shadow-sm.p-3.rounded.d-flex.text-decoration-none
+      a.contact.mb-5.shadow-sm.px-3.rounded.d-flex.text-decoration-none
         img(src=user.avatar class='avatar rounded-circle' height='50' width='50' alt='avatar')
-        .text-dark.cursor_color
-          .px-4.fw-bold #{user.name}
-          .px-4.small #{user.status}
+        .cursor_color
+          .text-dark.px-4.fw-bold #{user.name}
+          .text-primary.px-4.small #{user.status}
