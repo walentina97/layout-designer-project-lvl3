@@ -8148,6 +8148,10 @@ textarea.form-control-lg {
   .border-xxl {
     border: 1px solid #efefef !important; } }
 
+.sticky-bottom {
+  position: sticky;
+  bottom: 0; }
+
 .btn-width {
   width: 50px;
   height: 50px; }
