@@ -2,27 +2,27 @@
 if current != 'chat'
   - activity = ''
 div(class='body scrollbar p-4 order-sm-1 tab-pane show fade ' + activity id='chats' aria-labelledby="chats")
-  h2.mt-4.mb-4 Чаты
+  h2.mt-4.mb-4.fw-bold Чаты
   form.mb-5
     input(type='text' class='h-0 form-control border-bottom border-0 p-4 bg-white shadow-none' placeholder='Поиск по сообщениям')
   a.contact.mb-4.px-3.shadow-sm.rounded.d-flex.text-decoration-none(href='chat.html')
     img(src='images/avatar_4.jpg' class='avatar rounded-circle' height='50' width='50' alt='avatar')
     div(class='overflow-hidden w-100')
       .text-dark.d-flex.justify-content-between
-        .px-4.text-truncate.cursor_color Вениамин Редакторович
+        .px-4.fw-bold.text-truncate.cursor_color Вениамин Редакторович
         .px-4.small 11:45
       .text-dark.px-4.small.text-truncate.cursor_color &omicron;&UnderBar;&Omicron;
   a.contact.mb-4.px-3.shadow-sm.rounded.d-flex.text-decoration-none
     img(src='images/avatar_2.jpg' class='avatar rounded-circle' height='50' width='50' alt='avatar')
     div(class='overflow-hidden w-100')
       .text-dark.d-flex.justify-content-between
-        .px-4.text-truncate.cursor_color Джедай Падаванов
+        .px-4.fw-bold.text-truncate.cursor_color Джедай Падаванов
         .px-4.small 10:12
       .text-dark.px-4.small.text-truncate.cursor_color Привет, скоро третий проект? Уже скоро надо будет выложить
   a.contact.mb-4.px-3.shadow-sm.rounded.d-flex.text-decoration-none
     img(src='images/avatar_3.jpg' class='avatar rounded-circle' height='50' width='50' alt='avatar')
     div(class='overflow-hidden w-100')
       .text-dark.d-flex.justify-content-between
-        .px-4.text-truncate.cursor_color Алексей Примадонин
+        .px-4.fw-bold.text-truncate.cursor_color Алексей Примадонин
         .px-4.small 08:53
       .text-dark.px-4.small.text-truncate.cursor_color Тесты упали &gt;&UnderBar;&lt;
