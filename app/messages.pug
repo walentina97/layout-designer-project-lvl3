@@ -1,4 +1,7 @@
-div(class='body scrollbar p-4 order-sm-1 tab-pane show fade active' id='chats' aria-labelledby="chats")
+- var activity = 'active'
+if current != 'chat'
+  - activity = ''
+div(class='body scrollbar p-4 order-sm-1 tab-pane show fade ' + activity id='chats' aria-labelledby="chats")
   h2.mt-4.mb-4.fw-bold Чаты
   form.mb-5
     input(type='text' class='h-0 form-control border-bottom border-0 p-4 bg-white shadow-none' placeholder='Поиск по сообщениям')
