@@ -2,7 +2,7 @@
 if current == 'chat'
   - activity = ''
 div(class='body scrollbar p-4 order-sm-1 tab-pane show fade ' + activity id='contacts' role="tabpanel" aria-labelledby="contacts")
-  h2.mt-4.mb-4 Контакты
+  h2.mt-4.mb-4.fw-bold Контакты
   form.mb-5
     input(type='text' class='h-0 form-control border-bottom border-0 p-4 bg-white shadow-none' placeholder='Поиск по контактам')
   include contacts.pug
@@ -12,5 +12,5 @@ div(class='body scrollbar p-4 order-sm-1 tab-pane show fade ' + activity id='con
       a.contact.mb-5.shadow-sm.px-3.rounded.d-flex.text-decoration-none
         img(src=user.avatar class='avatar rounded-circle' height='50' width='50' alt='avatar')
         .cursor_color
-          .text-dark.px-4 #{user.name}
+          .text-dark.px-4.fw-bold #{user.name}
           .text-primary.px-4.small #{user.status}
