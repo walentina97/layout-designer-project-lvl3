@@ -1,7 +1,7 @@
 .header.order-1.bg-primary.d-flex.justify-content-around.align-items-center.pt-3.pb-3
   a.d-flex.ms-4.me-auto(href='#')
     img(src='images/icons/sprite.svg#logo' width='15' alt='главная')
-  nav.d-flex(class= "nav" id="myTab" role="tablist")
+  nav.d-flex.me-3(class= "nav" id="myTab" role="tablist")
     if current == 'current-chat'
         a.d-md-none.d-flex.ms-3.align-items-center.text-decoration-none(id="current-chat-tab" data-bs-toggle="tab" href="#current-chat" role="tab" aria-controls="current-chat" aria-selected="true")
           img(class='me-2' src='images/icons/sprite.svg#chat-left-text' width='25' height='40' alt='чаты')
