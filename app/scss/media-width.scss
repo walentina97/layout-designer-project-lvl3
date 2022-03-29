@@ -1,3 +1,9 @@
+@media (min-width: 768px) {
+  .width-phone {
+    width: 75%;
+  }
+}
+
 @media (max-width: 417px) {
   .width-phone {
     width: 100%;
