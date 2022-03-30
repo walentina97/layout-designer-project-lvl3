@@ -8032,12 +8032,12 @@ textarea.form-control-lg {
 .radius {
   border-radius: 1rem; }
 
-.radius-left-top {
-  border-top-left-radius: 1rem; }
-
 .radius-left {
   border-top-left-radius: 1rem;
   border-bottom-left-radius: 1rem; }
+
+.radius-left-top {
+  border-top-left-radius: 1rem; }
 
 .radius-right {
   border-top-right-radius: 1rem;
@@ -8046,11 +8046,11 @@ textarea.form-control-lg {
 @media (min-width: 576px) {
   .radius-sm {
     border-radius: 1rem; }
-  .radius-sm-left-top {
-    border-top-left-radius: 1rem; }
   .radius-sm-left {
     border-top-left-radius: 1rem;
     border-bottom-left-radius: 1rem; }
+  .radius-sm-left-top {
+    border-top-left-radius: 1rem; }
   .radius-sm-right {
     border-top-right-radius: 1rem;
     border-bottom-right-radius: 1rem; } }
@@ -8058,11 +8058,11 @@ textarea.form-control-lg {
 @media (min-width: 768px) {
   .radius-md {
     border-radius: 1rem; }
-  .radius-md-left-top {
-    border-top-left-radius: 1rem; }
   .radius-md-left {
     border-top-left-radius: 1rem;
     border-bottom-left-radius: 1rem; }
+  .radius-md-left-top {
+    border-top-left-radius: 1rem; }
   .radius-md-right {
     border-top-right-radius: 1rem;
     border-bottom-right-radius: 1rem; } }
@@ -8070,11 +8070,11 @@ textarea.form-control-lg {
 @media (min-width: 992px) {
   .radius-lg {
     border-radius: 1rem; }
-  .radius-lg-left-top {
-    border-top-left-radius: 1rem; }
   .radius-lg-left {
     border-top-left-radius: 1rem;
     border-bottom-left-radius: 1rem; }
+  .radius-lg-left-top {
+    border-top-left-radius: 1rem; }
   .radius-lg-right {
     border-top-right-radius: 1rem;
     border-bottom-right-radius: 1rem; } }
@@ -8082,11 +8082,11 @@ textarea.form-control-lg {
 @media (min-width: 1200px) {
   .radius-xl {
     border-radius: 1rem; }
-  .radius-xl-left-top {
-    border-top-left-radius: 1rem; }
   .radius-xl-left {
     border-top-left-radius: 1rem;
     border-bottom-left-radius: 1rem; }
+  .radius-xl-left-top {
+    border-top-left-radius: 1rem; }
   .radius-xl-right {
     border-top-right-radius: 1rem;
     border-bottom-right-radius: 1rem; } }
@@ -8094,11 +8094,11 @@ textarea.form-control-lg {
 @media (min-width: 1600px) {
   .radius-xxl {
     border-radius: 1rem; }
-  .radius-xxl-left-top {
-    border-top-left-radius: 1rem; }
   .radius-xxl-left {
     border-top-left-radius: 1rem;
     border-bottom-left-radius: 1rem; }
+  .radius-xxl-left-top {
+    border-top-left-radius: 1rem; }
   .radius-xxl-right {
     border-top-right-radius: 1rem;
     border-bottom-right-radius: 1rem; } }
@@ -8106,51 +8106,51 @@ textarea.form-control-lg {
 .border {
   border: 1px solid #efefef !important; }
 
-.border-bottom {
-  border-bottom: 1px solid #efefef !important; }
-
 .border-top {
   border-top: 1px solid #efefef !important; }
+
+.border-bottom {
+  border-bottom: 1px solid #efefef !important; }
 
 @media (min-width: 576px) {
   .border-sm {
     border: 1px solid #efefef !important; }
-  .border-sm-bottom {
-    border-bottom: 1px solid #efefef !important; }
   .border-sm-top {
-    border-top: 1px solid #efefef !important; } }
+    border-top: 1px solid #efefef !important; }
+  .border-sm-bottom {
+    border-bottom: 1px solid #efefef !important; } }
 
 @media (min-width: 768px) {
   .border-md {
     border: 1px solid #efefef !important; }
-  .border-md-bottom {
-    border-bottom: 1px solid #efefef !important; }
   .border-md-top {
-    border-top: 1px solid #efefef !important; } }
+    border-top: 1px solid #efefef !important; }
+  .border-md-bottom {
+    border-bottom: 1px solid #efefef !important; } }
 
 @media (min-width: 992px) {
   .border-lg {
     border: 1px solid #efefef !important; }
-  .border-lg-bottom {
-    border-bottom: 1px solid #efefef !important; }
   .border-lg-top {
-    border-top: 1px solid #efefef !important; } }
+    border-top: 1px solid #efefef !important; }
+  .border-lg-bottom {
+    border-bottom: 1px solid #efefef !important; } }
 
 @media (min-width: 1200px) {
   .border-xl {
     border: 1px solid #efefef !important; }
-  .border-xl-bottom {
-    border-bottom: 1px solid #efefef !important; }
   .border-xl-top {
-    border-top: 1px solid #efefef !important; } }
+    border-top: 1px solid #efefef !important; }
+  .border-xl-bottom {
+    border-bottom: 1px solid #efefef !important; } }
 
 @media (min-width: 1600px) {
   .border-xxl {
     border: 1px solid #efefef !important; }
-  .border-xxl-bottom {
-    border-bottom: 1px solid #efefef !important; }
   .border-xxl-top {
-    border-top: 1px solid #efefef !important; } }
+    border-top: 1px solid #efefef !important; }
+  .border-xxl-bottom {
+    border-bottom: 1px solid #efefef !important; } }
 
 .sticky-bottom {
   position: sticky;
