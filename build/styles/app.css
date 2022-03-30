@@ -1349,7 +1349,7 @@ progress {
   margin-bottom: 1rem;
   color: #212529;
   vertical-align: top;
-  border-color: theme-color("gray"); }
+  border-color: #efefef; }
   .table > :not(caption) > * > * {
     padding: 0.5rem 0.5rem;
     background-color: var(--bs-table-bg);
@@ -4379,7 +4379,7 @@ textarea.form-control-lg {
   align-items: center;
   justify-content: space-between;
   padding: 1rem 1rem;
-  border-bottom: 1px solid theme-color("gray");
+  border-bottom: 1px solid #efefef;
   border-top-left-radius: calc(0.3rem - 1px);
   border-top-right-radius: calc(0.3rem - 1px); }
   .modal-header .btn-close {
@@ -4402,7 +4402,7 @@ textarea.form-control-lg {
   align-items: center;
   justify-content: flex-end;
   padding: 0.75rem;
-  border-top: 1px solid theme-color("gray");
+  border-top: 1px solid #efefef;
   border-bottom-right-radius: calc(0.3rem - 1px);
   border-bottom-left-radius: calc(0.3rem - 1px); }
   .modal-footer > * {
@@ -5402,31 +5402,31 @@ textarea.form-control-lg {
   transform: translateY(-50%) !important; }
 
 .border {
-  border: 1px solid theme-color("gray") !important; }
+  border: 1px solid #efefef !important; }
 
 .border-0 {
   border: 0 !important; }
 
 .border-top {
-  border-top: 1px solid theme-color("gray") !important; }
+  border-top: 1px solid #efefef !important; }
 
 .border-top-0 {
   border-top: 0 !important; }
 
 .border-end {
-  border-right: 1px solid theme-color("gray") !important; }
+  border-right: 1px solid #efefef !important; }
 
 .border-end-0 {
   border-right: 0 !important; }
 
 .border-bottom {
-  border-bottom: 1px solid theme-color("gray") !important; }
+  border-bottom: 1px solid #efefef !important; }
 
 .border-bottom-0 {
   border-bottom: 0 !important; }
 
 .border-start {
-  border-left: 1px solid theme-color("gray") !important; }
+  border-left: 1px solid #efefef !important; }
 
 .border-start-0 {
   border-left: 0 !important; }
@@ -8104,53 +8104,53 @@ textarea.form-control-lg {
     border-bottom-right-radius: 1rem; } }
 
 .border {
-  border: 1px solid theme-color("gray") !important; }
+  border: 1px solid #efefef !important; }
 
 .border-top {
-  border-top: 1px solid theme-color("gray") !important; }
+  border-top: 1px solid #efefef !important; }
 
 .border-bottom {
-  border-bottom: 1px solid theme-color("gray") !important; }
+  border-bottom: 1px solid #efefef !important; }
 
 @media (min-width: 576px) {
   .border-sm {
-    border: 1px solid theme-color("gray") !important; }
+    border: 1px solid #efefef !important; }
   .border-sm-top {
-    border-top: 1px solid theme-color("gray") !important; }
+    border-top: 1px solid #efefef !important; }
   .border-sm-bottom {
-    border-bottom: 1px solid theme-color("gray") !important; } }
+    border-bottom: 1px solid #efefef !important; } }
 
 @media (min-width: 768px) {
   .border-md {
-    border: 1px solid theme-color("gray") !important; }
+    border: 1px solid #efefef !important; }
   .border-md-top {
-    border-top: 1px solid theme-color("gray") !important; }
+    border-top: 1px solid #efefef !important; }
   .border-md-bottom {
-    border-bottom: 1px solid theme-color("gray") !important; } }
+    border-bottom: 1px solid #efefef !important; } }
 
 @media (min-width: 992px) {
   .border-lg {
-    border: 1px solid theme-color("gray") !important; }
+    border: 1px solid #efefef !important; }
   .border-lg-top {
-    border-top: 1px solid theme-color("gray") !important; }
+    border-top: 1px solid #efefef !important; }
   .border-lg-bottom {
-    border-bottom: 1px solid theme-color("gray") !important; } }
+    border-bottom: 1px solid #efefef !important; } }
 
 @media (min-width: 1200px) {
   .border-xl {
-    border: 1px solid theme-color("gray") !important; }
+    border: 1px solid #efefef !important; }
   .border-xl-top {
-    border-top: 1px solid theme-color("gray") !important; }
+    border-top: 1px solid #efefef !important; }
   .border-xl-bottom {
-    border-bottom: 1px solid theme-color("gray") !important; } }
+    border-bottom: 1px solid #efefef !important; } }
 
 @media (min-width: 1600px) {
   .border-xxl {
-    border: 1px solid theme-color("gray") !important; }
+    border: 1px solid #efefef !important; }
   .border-xxl-top {
-    border-top: 1px solid theme-color("gray") !important; }
+    border-top: 1px solid #efefef !important; }
   .border-xxl-bottom {
-    border-bottom: 1px solid theme-color("gray") !important; } }
+    border-bottom: 1px solid #efefef !important; } }
 
 .sticky-bottom {
   position: sticky;

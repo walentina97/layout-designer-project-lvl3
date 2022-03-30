@@ -30,4 +30,4 @@ $container-max-widths: (
 
 $enable-shadows: true;
 
-$border-color: theme-color("gray");
+$border-color: map-get($theme-colors, "gray");
