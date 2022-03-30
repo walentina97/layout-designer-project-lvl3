@@ -5,12 +5,12 @@
       border: 1px solid #efefef !important;
     }
 
-    .border#{$infix}-bottom {
-      border-bottom: 1px solid #efefef !important;
-    }
-
     .border#{$infix}-top {
       border-top: 1px solid #efefef !important;
+    }
+
+    .border#{$infix}-bottom {
+      border-bottom: 1px solid #efefef !important;
     }
   }
 }
