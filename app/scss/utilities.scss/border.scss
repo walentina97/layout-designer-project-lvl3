@@ -1,16 +1,17 @@
 @each $breakpoint in map-keys($grid-breakpoints) {
   @include media-breakpoint-up($breakpoint) {
     $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
     .border#{$infix} {
-      border: 1px solid #efefef !important;
+      border: 1px solid $border-color !important;
     }
 
     .border#{$infix}-top {
-      border-top: 1px solid #efefef !important;
+      border-top: 1px solid $border-color !important;
     }
 
     .border#{$infix}-bottom {
-      border-bottom: 1px solid #efefef !important;
+      border-bottom: 1px solid $border-color !important;
     }
   }
 }
