@@ -8019,7 +8019,7 @@ textarea.form-control-lg {
 .body a:hover {
   background-color: #4545a5; }
 
-.body a:hover .px-4 {
+.body a:hover div {
   color: #fff !important; }
 
 .h-0 {
