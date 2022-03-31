@@ -9,8 +9,8 @@ div(class='body scrollbar p-4 order-sm-1 tab-pane show fade ' + activity id='con
   each contact, index in contacts
     p.text-muted=index
     each user in contact
-      a.contact.mb-5.shadow-sm.px-3.rounded.d-flex.text-decoration-none
-        img(src=user.avatar class='avatar rounded-circle' height='50' width='50' alt='avatar')
-        .cursor-color
-          .text-dark.px-4.fw-bold #{user.name}
-          .text-secondary.px-4.small #{user.status}
+      a.contact.mb-5.shadow-sm.px-3.d-flex.text-decoration-none
+        img(src=user.avatar class='rounded-circle' height='50' width='50' alt='avatar')
+        .px-4
+          .text-dark.fw-bold #{user.name}
+          .text-secondary.small #{user.status}
