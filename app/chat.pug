@@ -8,10 +8,10 @@ html(lang='ru' class='h-100')
     link(rel='stylesheet' href='styles/app.css')
     - const current = 'current-chat';
     - const actives = 'active';
-  body.bg-gray.h-100.scrollbar.p-md-4.radius
+  body.bg-gray.h-100.p-md-4
     .container-xxl.h-100.scrollbar.radius-md.bg-white
       .row.h-100
-        .col-sm-4.h-100.scrollbar.px-0.d-flex.flex-column.tab-content
+        .col-sm-4.h-100.px-0.d-flex.flex-column.tab-content
           include header.pug
           include contact_each.pug
           include messages.pug
