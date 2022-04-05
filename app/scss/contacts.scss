@@ -2,10 +2,6 @@
   @include hide-scrollbar;
 }
 
-.card-shadow {
-  @include box-shadow;
-}
-
 .body {
   a:hover {
     background-color: #4545a5;

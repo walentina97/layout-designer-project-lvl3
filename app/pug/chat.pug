@@ -17,6 +17,7 @@ html(lang='ru' class='h-100')
           include messages.pug
           include profile.pug
           include current.pug
-          +chates('current-chat')
+          +chates('current-chat', 'd-md-none')
         .col-xl-8.h-100.scrollbar.p-0.d-none.d-lg-block.h-100.border-start.m-auto
           +chates
+    script(src='bootstrap.bundle.js')
