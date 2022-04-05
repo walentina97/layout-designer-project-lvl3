@@ -2,7 +2,6 @@ const { src, dest, parallel, watch } = require("gulp");
 const browserSync = require("browser-sync").create();
 const sass = require("gulp-sass");
 const pug = require("gulp-pug");
-const concat = require("gulp-concat");
 const svgSprite = require("gulp-svg-sprite");
 
 const browsersync = () => {
@@ -52,7 +51,6 @@ const svg2sprite = () => {
 };
 
 const startWatch = () => {
-  watch(["app/gulpfile.js"], scripts);
   watch(["app/scss/app.scss"], sass2css);
   watch(["app/pug/chat.pug", "app/pug/index.pug"], pug2html);
 };
